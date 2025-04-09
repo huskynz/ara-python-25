@@ -31,7 +31,7 @@ def add_item(user_list):
     """Add an item to the shopping list with validation."""
 
     # Get the item from user
-    item = input("Please enter the item to be added: ").strip()
+    item = get_item()
     
     # Handle empty input
     if not item:
@@ -56,7 +56,6 @@ def add_item(user_list):
     print(f"[{item}] was added to the list.")
     print(f"{get_total_items(user_list)}")
     return True
-
 
 
 
