@@ -1,10 +1,11 @@
 <br/>
 <p align="center">
-  <a href="https://github.com/HuskyNZ/10">
+  <a href="https://github.com/HuskyNZ/ara-python-25">
     <img src="https://serv.hnz.li/logo/default.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Some little Python Work</h3>
+  <p align="center">This makes me go crazy</p>
   <br>
 
 </p>
