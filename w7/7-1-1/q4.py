@@ -36,6 +36,7 @@ def get_number_as_string(message, min_length):
 
 
 
+
 # Test parameter names
 pin_message = 'Please enter your pin number: '
 min_digits = 4
