@@ -3,39 +3,35 @@
 # peter@husky.nz
 # wow
 
-#def add_item(user_list):
-#    """
-#    THis works somehow, my code works somewhat
-#    """
-#    itemin = input("Please enter the item to be added: ")
-#
-#    item = itemin.strip().lower().capitalize()
-#
-#    return_value = item
-#
-#    if item == " ":
-#        print("No item was entered.")
-#        return False
-#    elif item in user_list:
-#        uchoice=input(f"[{item}] is already in the list, please confirm that you want to add another (y/n): ")
-#        if uchoice == "y":
-#            return return_value
-#        elif uchoice == "n":
-#            print(f"[{item}] was not added.")
-#        else:
-#           return return_value
-#
-
-
 def add_item(user_list):
-    """Add an item to the shopping list with validation."""
+<<<<<<< HEAD
+    """
+    THis works somehow, my code works somewhat
+    """
+    itemin = input("Please enter the item to be added: ")
 
-    # Get the item from user
-    item = get_item()
-    
-    # Handle empty input
-    if not item:
+    item = itemin.strip().lower().capitalize()
+
+    return_value = item
+=======
+    """Add an item to the shopping list with validation."""
+>>>>>>> 039f9b31f2d189892b13511e503e43187d64f06f
+
+    if item == " ":
         print("No item was entered.")
+<<<<<<< HEAD
+        return False
+    elif item in user_list:
+        uchoice=input(f"[{item}] is already in the list, please confirm that you want to add another (y/n): ")
+        if uchoice == "y":
+            return return_value
+        elif uchoice == "n":
+            print(f"[{item}] was not added.")
+        else:
+           return return_value
+
+
+=======
         print(f"{get_total_items(user_list)}")
         return False
         
@@ -56,6 +52,7 @@ def add_item(user_list):
     print(f"[{item}] was added to the list.")
     print(f"{get_total_items(user_list)}")
     return True
+>>>>>>> 039f9b31f2d189892b13511e503e43187d64f06f
 
 
 
