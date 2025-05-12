@@ -1,3 +1,8 @@
+# 1-1-1
+# Peter
+# peter@husky.nz
+# wow
+
 class Calculator:
     """A calculator class that performs operations on two numbers."""
     def __init__(self, num1, num2):
@@ -15,13 +20,3 @@ class Calculator:
     
     def divide(self):
         return round(self.num1 / self.num2, 3)
-    
-
-
-
-calc_1 = Calculator(2, 3)
-
-print(calc_1.add())
-print(calc_1.subtract())
-print(calc_1.divide())
-print(calc_1.multiply())

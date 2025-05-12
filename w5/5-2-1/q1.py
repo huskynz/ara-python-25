@@ -3,15 +3,23 @@
 # peter@husky.nz
 # wow
 
-
-def get_vowel_count(message: str, required_case="") -> int:
+def get_vowel_count(message, required_case='both'):
     """
     Vowel Count
-    """
-    vowels = {'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'}
-    message = message.replace("#","").replace(".","").strip()
-    
-    count = sum(1 for ch in message if ch in vowels)
-    return count
+    """ 
+    required_case = required_case.lower()
+    if required_case not in ['both', 'lower', 'upper']:
+        required_case = 'both'
 
-print(get_vowel_count('The function does not display any output therefore NO strings are given.', 'lower'))
+    vowels_lower = 'aeiou'
+    vowels_upper = 'AEIOU'
+
+    if required_case == 'lower':
+        vowels = vowels_lower
+    elif required_case == 'upper':
+        vowels = vowels_upper
+    else:
+        vowels = vowels_lower + vowels_upper
+
+    count = sum(1 for char in message if char in vowels)
+    return count
