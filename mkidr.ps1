@@ -1,6 +1,6 @@
-$BasePath = "C:\Users\peg0252\"
+$BasePath = ""
 
-$FolderName = "DeleteMe"
+$FolderName = ""
 
 
 if (Test-Path -Path $BasePath\$FolderName) {

@@ -8,30 +8,15 @@ def get_number_as_string(message, min_length):
     """
     THis works somehow, my code works somewhat
     """
-    UserPinNum = input(message).strip().replace(" ", "")
+    while True:
+        user_input = input(message).replace(" ","")
 
-    UserPinNumCheck = UserPinNum.isnumeric()
-
-    if UserPinNumCheck == True:
-        UserPinNum = int(UserPinNum)
-        UserPinNumlen = len(str(UserPinNum))
-        UserPinVaild = False
-
-        if UserPinNumlen < min_length:
-            print(f"The number must be at least {min_length} digits long.")
-        
+        if not user_input.isdigit():
+          print("Digits only please.")
+        elif len(user_input) < min_length:
+           print(f"The number must be at least {min_length} digits long.")
         else:
-            return(str(UserPinNum))
-    
-    else:
-        while UserPinVaild == False:
-           if UserPinNumCheck == False:
-            print("Digits only please.")
-            UserPinVaild = False
-           elif UserPinNumCheck == True:
-            UserPinVaild = True 
-            get_number_as_string(message, min_length)
-
+           return user_input  
 
 
 
