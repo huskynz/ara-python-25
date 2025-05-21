@@ -4,7 +4,6 @@
 # wow
 
 def add_item(user_list):
-<<<<<<< HEAD
     """
     THis works somehow, my code works somewhat
     """
@@ -13,13 +12,9 @@ def add_item(user_list):
     item = itemin.strip().lower().capitalize()
 
     return_value = item
-=======
-    """Add an item to the shopping list with validation."""
->>>>>>> 039f9b31f2d189892b13511e503e43187d64f06f
 
     if item == " ":
         print("No item was entered.")
-<<<<<<< HEAD
         return False
     elif item in user_list:
         uchoice=input(f"[{item}] is already in the list, please confirm that you want to add another (y/n): ")
@@ -29,9 +24,6 @@ def add_item(user_list):
             print(f"[{item}] was not added.")
         else:
            return return_value
-
-
-=======
         print(f"{get_total_items(user_list)}")
         return False
         
@@ -52,7 +44,7 @@ def add_item(user_list):
     print(f"[{item}] was added to the list.")
     print(f"{get_total_items(user_list)}")
     return True
->>>>>>> 039f9b31f2d189892b13511e503e43187d64f06f
+
 
 
 
