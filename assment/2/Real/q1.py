@@ -11,11 +11,3 @@ class Cookie:
          msg = f'{fname_tital} makes a ({lname_tital}) flavoured cookie which is {self.size} cm radius and has {self.calories}'
 
          return msg
-    
-
-a_cookie = Cookie('Orio', 'Chocolate', 3, 400)
-print(f'Brand: {a_cookie.brand}')
-print(f'Flavour: {a_cookie.flavour}')
-print(f'Size: {a_cookie.size}')
-print(f'Calories: {a_cookie.calories}')
-print(a_cookie)
